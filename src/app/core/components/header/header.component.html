@@ -1,0 +1,24 @@
+<nav class="main-nav">
+  <ul class="main-nav__menu">
+    <li class="main-nav__menu-item">
+      <a class="main-nav__menu-item-link" [routerLink]="[culture,'welcome']"
+         routerLinkActive="main-nav__menu-item-link-active">Home</a>
+    </li>
+    <li class="main-nav__menu-item">
+      <a class="main-nav__menu-item-link">About</a>
+    </li>
+    <li class="main-nav__menu-item">
+      <a class="main-nav__menu-item-link">Culture</a>
+    </li>
+    <li class="main-nav__menu-item">
+      <a class="main-nav__menu-item-link">Lenguages
+        <span class="arrow">&#x25BC;</span>
+      </a>
+      <ul class="main-nav__sub-menu">
+        <li class="main-nav__sub-menu-item" *ngFor="let lenguage of lenguages" (click)="setLenguage(lenguage)">
+          <a class="main-nav__sub-menu-item-link">{{lenguage}}</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
