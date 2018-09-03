@@ -1,5 +1,7 @@
-# kununu Frontend Test
+# Multilanguage Angular Example
 
-## Installation / Run Project
+## Using i18n JIT compiler approach
+
+### Install & Run the app
 
 run npm install & ng serve
